@@ -25,14 +25,12 @@
 }
 .dark02 {
   color: var(--Dark-02, #424242);
-  text-align: center;
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 26px; /* 144.444% */
 }
 .dark03 {
   color: var(--Dark-03, #727272);
-  text-align: center;
   font-family: "Work Sans";
   font-size: 1rem;
   font-style: normal;
@@ -102,8 +100,9 @@ nav {
   max-width: 35vw;
 }
 .hero-section p {
-  margin: 2rem;
+  margin: 2rem auto;
   max-width: 50vw;
+  text-align: center;
 }
 
 .banner {
@@ -151,8 +150,7 @@ nav {
   text-align: start;
 }
 .experience10 {
-  width: 21rem;
-  height: 12rem;
+  padding: 3rem;
   border-radius: 8px;
   background: #ff900e;
   text-align: center;
@@ -164,6 +162,64 @@ nav {
   justify-content: center;
   margin: -120px -100px;
   position: absolute;
+}
+.fact {
+  max-width: 70vw;
+  margin: 0 auto 10rem;
+}
+
+.fact > p {
+  margin: 1rem 0 6rem;
+}
+.fact-box-container {
+  justify-content: space-between;
+  margin: 2rem auto;
+}
+.fact-box {
+  height: 15rem;
+  width: 15rem;
+  border: 1px solid orangered;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.fact-box img {
+  width: 45.221px;
+  height: 45.221px;
+  margin-bottom: 0.9rem;
+}
+
+.sponsor h1,
+.sponsor p {
+  text-align: center;
+  margin: 1rem auto;
+}
+.sponsor-container {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 70vw;
+  margin: 0 auto;
+}
+.sponsor-container img {
+  margin: 1rem;
+  filter: grayscale(100%);
+}
+.sponsor-container img:hover {
+  filter: grayscale(0%);
+}
+footer {
+  padding: 0.5rem;
+  margin: 5rem auto;
+  text-align: center;
+  width: 90vw;
+  border-radius: 8px;
+  background: #fff4e7;
+  height: 7rem;
+  justify-content: center;
+  align-items: center;
 }
 /* responsive for mobile devices */
 @media screen and (max-width: 567px) {
@@ -197,9 +253,23 @@ nav {
     width: 20rem;
     text-align: start;
   }
-
+  .width03 {
+    width: 90vw;
+    text-align: center;
+  }
+  .love-img {
+    order: -1;
+    margin-bottom: 5rem;
+  }
   .love-img img {
     width: 80vw;
+  }
+  .experience10 {
+    margin: -80px -15px;
+    position: absolute;
+    max-width: 50vw;
+    font-size: 2rem;
+    padding: 1rem;
   }
   .freature-card {
     margin: 2rem auto;
@@ -208,25 +278,21 @@ nav {
     flex-direction: column;
     margin: 5rem auto;
   }
-  .experience10 {
-    width: 10.5rem;
-    height: 6rem;
-    border-radius: 4px;
-    background: #ff900e;
-    text-align: center;
-    font-size: 1.5rem;
-    color: #fff;
-    font-weight: 600;
-    display: flex;
+
+  .fact {
+    max-width: 90vw;
+  }
+  .fact-box-container {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: -50px -20px;
-    position: absolute;
+  }
+  .fact-box {
+    margin: 1rem;
   }
 }
 
 /* tablet devices responsive */
-@media screen and (min-width: 567px) and (max-width: 1023px) {
+@media screen and (min-width: 567px) and (max-width: 1024px) {
   nav {
     flex-direction: column;
   }
@@ -243,5 +309,54 @@ nav {
   .hero-section p {
     margin: 2rem 1rem;
     max-width: 80vw;
+  }
+  .features {
+    flex-direction: column;
+  }
+  .features-images {
+    margin: 0 auto 3rem;
+  }
+  .features-images img {
+    width: 90%;
+  }
+  .feature-love {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90vw;
+  }
+  .freature-card {
+    margin: 2rem auto;
+  }
+  .love-img img {
+    max-width: 50vw;
+  }
+  .love-img {
+    order: -1;
+    margin-bottom: 5rem;
+  }
+  .experience10 {
+    margin: -80px -45px;
+    position: absolute;
+    max-width: 50vw;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .fact {
+    margin: auto;
+    max-width: 90vw;
+  }
+  .fact > p,
+  .fact > h1 {
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  .fact-box-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .sponsor-container {
+    margin: 2rem auto;
   }
 }
