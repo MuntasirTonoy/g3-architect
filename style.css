@@ -67,6 +67,11 @@
   background: #ff900e;
   border: none;
   display: block;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.primary-btn:hover {
+  background-color: #ff8f0eb9;
 }
 /* individual styles */
 header {
@@ -83,8 +88,12 @@ nav {
 .nav-link > a {
   text-decoration: none;
 }
-.nav-link Li {
+.nav-link li {
   margin: 0 2em;
+  cursor: pointer;
+}
+.nav-link li:hover {
+  color: #ce6e00;
 }
 .hero-section {
   flex-direction: column;
@@ -206,6 +215,7 @@ nav {
 .sponsor-container img {
   margin: 1rem;
   filter: grayscale(100%);
+  transition: 0.3s ease-in-out;
 }
 .sponsor-container img:hover {
   filter: grayscale(0%);
@@ -232,6 +242,9 @@ footer {
   }
   .hero-section {
     margin: 3rem auto;
+  }
+  .hero-section img {
+    max-width: 97vw;
   }
   .hero-section h1 {
     max-width: 90vw;
@@ -309,6 +322,9 @@ footer {
   .hero-section p {
     margin: 2rem 1rem;
     max-width: 80vw;
+  }
+  .hero-section img {
+    max-width: 97vw;
   }
   .features {
     flex-direction: column;
